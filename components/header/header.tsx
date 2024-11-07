@@ -25,7 +25,7 @@ export default function Header() {
         <FaHeart className="cursor-pointer hover:text-gray-300 w-6" />
         <FaUser className="cursor-pointer hover:text-gray-300 w-6" />
         <FaShoppingCart className="cursor-pointer hover:text-gray-300 w-6" />
-      </div>
+      </div> 
     </header>
   );
 }
