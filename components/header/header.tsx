@@ -1,24 +1,31 @@
-
-import React from "react"
-import { FaHeart,FaUser, FaShoppingCart, FaSearch}from 'react-icons/fa';
+import React from "react";
+import { FaHeart, FaUser, FaShoppingCart, FaSearch } from "react-icons/fa";
 export default function Header() {
-    return(
-        <header className="flex items-centre justify-between bg-[#c5b299] px-6 py-4 ">
-        <h1 className="text-3x1 font-bold text-white">MANZZARI</h1>
-        <div className='flex-1 mx-5'>
-            <input
-            type='text'
-            name = "search"
-            placeholder="search for gold jewellery,diamond jewelry and more"
-            className="w-full px-4 py-2 rounded-md border border-gray-300 text-gray-700 focus:outline-none focus"/>
-            <FaSearch className = "cursor-pointer hover:text-gray-300"/>
-        </div>
-       
-      <div className="flex space-x-4 text-white">
-        <FaHeart className="cursor-pointer hover:text-gray-300"/>
-        <FaUser className="cursor-pointer hover:text-gray-300"/>
-        <FaShoppingCart className="cursor-pointer hover:text-gray-300"/>
+  return (
+    <header className="flex items-center justify-between bg-[#A29875] px-6 py-4 ">
+      <div>
+        <p className="text-3x1 font-bold text-white px-4">MANZZARI</p>
       </div>
-        </header>
-    )
+      <div className="flex w-3/6 bg-white rounded-lg border-white border-2 h-10">
+        <div className="flex pr-2 w-full">
+          <input
+            type="text"
+            name="search"
+            placeholder="Search for Gold Jewellery,Diamond Jewelry and more"
+            className="w-full text-xs px-2 text-gray-700 focus:outline-none" 
+          />
+          <div className="flex items-center ">
+          <FaSearch className="cursor-pointer text-gray-500 hover:text-gray-300 w-4" />
+        </div>
+        </div>
+        
+      </div>
+
+      <div className="flex space-x-4 text-white">
+        <FaHeart className="cursor-pointer hover:text-gray-300 w-6" />
+        <FaUser className="cursor-pointer hover:text-gray-300 w-6" />
+        <FaShoppingCart className="cursor-pointer hover:text-gray-300 w-6" />
+      </div>
+    </header>
+  );
 }
